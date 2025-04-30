@@ -1,7 +1,6 @@
-// عداد الزوار العالمي باستخدام CountAPI
+// عداد زوار عالمي باستخدام CountAPI
 window.onload = function () {
-  // استبدل "anis-bt.dev" بـ اسم فريد خاص بموقعك إذا تحب
-  fetch('https://api.countapi.xyz/hit/anis-bt.dev/visits')
+  fetch('https://api.countapi.xyz/hit/anisbt-test123/visits')
     .then(response => response.json())
     .then(data => {
       document.getElementById("visitorCount").textContent = data.value;
