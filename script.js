@@ -1,10 +1,14 @@
 // عداد الزوار العالمي باستخدام CountAPI
 window.onload = function () {
-  fetch('https://api.countapi.xyz/hit/anis-benticha.dev/visits')
+  // استبدل "anis-bt.dev" بـ اسم فريد خاص بموقعك إذا تحب
+  fetch('https://api.countapi.xyz/hit/anis-bt.dev/visits')
     .then(response => response.json())
     .then(data => {
       document.getElementById("visitorCount").textContent = data.value;
-      console.log("Visits: " + data.value);
+      console.log("عدد الزوار:", data.value);
+    })
+    .catch(error => {
+      console.error("خطأ في جلب عدد الزوار:", error);
     });
 };
 
